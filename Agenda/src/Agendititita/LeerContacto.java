@@ -6,6 +6,8 @@ import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
+
+
 public class LeerContacto {
    public static synchronized ArrayList<Contactos> leer() throws Exception{
         File file= new File("noleer.xxx");
@@ -13,5 +15,9 @@ public class LeerContacto {
         ObjectInputStream ois= new ObjectInputStream(fis);
         ArrayList<Contactos> c= (ArrayList<Contactos>)ois.readObject();
         return c;
-    }  
+    }
+   
+   public static void BuscarContacto(){
+    
+}
 }
