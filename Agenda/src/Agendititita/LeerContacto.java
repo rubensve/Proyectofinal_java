@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
+import javax.swing.table.DefaultTableModel;
 
 
 
@@ -14,10 +15,8 @@ public class LeerContacto {
         FileInputStream fis= new FileInputStream(file);
         ObjectInputStream ois= new ObjectInputStream(fis);
         ArrayList<Contactos> c= (ArrayList<Contactos>)ois.readObject();
+        
         return c;
     }
-   
-   public static void BuscarContacto(){
-    
 }
-}
+
